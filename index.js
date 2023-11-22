@@ -1,26 +1,5 @@
-const data = [
-    {
-        name: "📁 Home",
-        children: [
-            {
-                name: "📁 Section 1",
-                children: [
-                    {
-                        name: "📁 H1"
-                    },
-                    {
-                        name: "📁 H2"
-                    },
-                    {
-                        name: "📁 H3"
-                    }
-                ]
-            }
-        ]
-    }
-];
-
 function mainfolder(rootfoldername) {
+    console.log(rootfoldername)
     let maincontainer = document.getElementsByClassName("rootfolder")[0]
     maincontainer.innerHTML = `
             <div id="folderStructure">
@@ -29,7 +8,6 @@ function mainfolder(rootfoldername) {
                 </span>
             </div>`
 }
-mainfolder("Woocommerce")
 
 function iterateData(data, indent = "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;") {
     data.forEach(item => {
@@ -45,7 +23,4 @@ function iterateData(data, indent = "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
         }
     });
 }
-iterateData(data);
-
-// index.js
-export { default as Container } from './src/Container';
+module.exports = {mainfolder,iterateData}
