@@ -1,0 +1,19 @@
+{
+  "name": "folder-structure",
+  "version": "1.0.0",
+  "description": "You can Easily create a simple folder Structure by Using these Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Folder",
+    "Structure"
+  ],
+  "author": "Hasan Mehdi",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
+}
