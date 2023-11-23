@@ -1,6 +1,6 @@
 {
   "name": "folder-structure-display",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Easily create a simple folder structure using this package",
   "main": "lib/index.js",
   "scripts": {
